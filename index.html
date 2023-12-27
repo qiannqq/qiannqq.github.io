@@ -1,1 +1,91 @@
-<p>test</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>支付页面</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    background-image: url('bjt.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .payment-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .payment-image {
+    width: 100%; /* Make the image responsive to the container width */
+    max-width: 300px; /* Maximum width the image can scale to */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  }
+
+  .payment-image:hover {
+    transform: scale(1.1); /* Zoom to 110% when hovered */
+  }
+
+  .payment-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .payment-button:hover {
+    background-color: #45a049;
+  }
+
+  .instruction {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .header {
+    background-color: rgba(238, 81, 81, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
+    display: inline-block; /* Only as wide as necessary */
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <div class="header">感谢支持依涵</div>
+  <div class="payment-container">
+    <br>
+    <br>
+    <img src="zfbzfz.jpg" alt="收款码" class="payment-image">
+    <br>
+    <div class="header">记得截屏支付截图</div>
+    <a href="其他支付方式的URL" class="payment-button">其他支付方式</a>
+  </div>
+</div>
+
+</body>
+</html>
